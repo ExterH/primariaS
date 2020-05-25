@@ -1,2 +1,4 @@
 Esta es mi historia en git
 para mi proyecto.jpg
+
+este es otro archivo
