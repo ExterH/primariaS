@@ -8,6 +8,7 @@
 </head>
 <body>
     <div style="text-align: center">
+        <title style="color: darkslategray">Master</title>
         <h3 style="color: darkblue">Algo en github</h3>
         <p style="color: darkcyan">Esto es un proyecto en <b>github</b></p>
     </div>
