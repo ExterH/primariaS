@@ -9,7 +9,7 @@
 <body>
     <div style="text-align: center">
         <h3 style="color: darkblue">Algo en github</h3>
-        <p>Esto es un proyecto en github</p>
+        <p style="color: darkcyan">Esto es un proyecto en <b>github</b></p>
     </div>
 </body>
 </html>
