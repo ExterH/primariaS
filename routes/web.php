@@ -129,3 +129,4 @@ Route::get('carrito/compras', 'carrito@compras')->name('carrito.compras')->middl
 Route::get('payment/status','PpaypalController@postPayment')->name('payment');
 
 
+// Route::get('/ff', function(){return'algo.algo'};);
