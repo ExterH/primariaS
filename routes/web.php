@@ -127,6 +127,3 @@ Route::get('carrito/trash', 'carrito@trash')->name('carrito.trash');
 Route::get('carrito/update/{producto}/{quantity}', 'carrito@update')->name('carrito.update');
 Route::get('carrito/compras', 'carrito@compras')->name('carrito.compras')->middleware('auth');
 Route::get('payment/status','PpaypalController@postPayment')->name('payment');
-
-//esto es una ruta de prueba
-Route::get('payment/status','PpaypalController@postPayment')->name('payment');
