@@ -91,10 +91,12 @@ class LoginController extends Controller
                 $usuario->rol = "Cliente";
             }
             else{
-                return ('Codigo incorrecto, volver a intentar');
+                // return Redirect::back()->withErrors(['msg', 'Error al ingresar, vuelve a intentar']);
+                return ('Codigo incorrecto, volver a intentar')->back();
             }
             $usuario->save();
-            return ('Guardado con exito');
+            return redirect()->route('init');
+            // return ('Guardado con exito')->with(redirect('init'));
         }
         return redirect('registrar');
         return ('Contraseña incorrecta');

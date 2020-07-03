@@ -139,6 +139,22 @@
                                 <li><a title="All Courses" href="{{url('clubs')}}"><span class="mini-sub-pro">Inicio</span></a></li>
                             </ul>
                         </li>
+                        <li>
+                            <a class="has-arrow" href="all-courses.html" aria-expanded="false">
+                                <span class="educate-icon educate-course icon-wrap"></span> 
+                                <span class="mini-click-non">Calificaciones</span>
+                            </a>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li>
+                                    {{-- <a title="All Courses" href="{{route('clubs.todos')}}">
+                                        <span class="mini-sub-pro">Alumnos</span>
+                                    </a> --}}
+                                </li>
+                            </ul>
+                            <ul class="submenu-angle" aria-expanded="false">
+                                <li><a title="All Courses" href="{{url('calificaciones')}}"><span class="mini-sub-pro">Inicio</span></a></li>
+                            </ul>
+                        </li>
                         {{-- <li>
                             <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-library icon-wrap"></span> <span class="mini-click-non">Biblioteca</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
@@ -220,7 +236,14 @@
                                                         
                                                         <li><button class="btn btn-link"><span ></span>Configuraciones</button>
                                                         </li>
-                                                    <li><form method="POST" action="{{route('logout')}}">@csrf<button class="btn btn-link"><span ></span>Cerrar sesión</button></form>
+                                                    <li>
+                                                        <form method="POST" action="{{route('logout')}}">
+                                                        @csrf
+                                                        <button class="btn btn-link">
+                                                            <span></span>
+                                                            Cerrar sesión
+                                                        </button>
+                                                    </form>
                                                         </li>
                                                         
                                                     </ul>
