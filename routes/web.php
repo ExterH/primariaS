@@ -87,6 +87,7 @@ Route::resource('calificaciones', 'CalifController')->middleware('auth');
 Route::get('info/{id}/info', 'CalifController@show')->name('calif.info')->middleware('auth');
 
 
+
 //pagina
 Route::get('/index', function(){return view('layout.pagina');})->name('pagina.index');
 // Route::name('pagina.inicio')->get('/.', function(){return view('pagina.inicio');});

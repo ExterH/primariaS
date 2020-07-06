@@ -181,7 +181,7 @@
             </div>
         </div>
         <div class="header-advance-area">
-            <div class="header-top-area">
+            <div class="header-top-area" style="background: darkred">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -389,7 +389,7 @@
         
         
         
-        <div class="footer-copyright-area">
+        <div class="footer-copyright-area" style="background: darkred">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
