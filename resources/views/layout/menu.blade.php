@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
 		============================================ -->
-        <link rel="shortcut icon" type="image/x-icon" href="public/sistema/img/favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="public/principal.png ">
         <!-- Google Fonts
             ============================================ -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
@@ -73,7 +73,7 @@
         <nav id="sidebar" class="">
             <div class="sidebar-header">
                 <a href="{{route('menu')}}"><img class="main-logo" src="{{asset('public/sistema/img/logo.jpg')}}" alt="" width="100" height="100"/></a>
-                <strong><a href="index.html"><img src="{{asset('public/sistema/img/logo/logosn.png')}}" alt="" /></a></strong>
+                <strong><a href="index.html"><img src="{{asset('public/sistema/img/logo.jpg')}}" alt="" /></a></strong>
             </div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
                 <nav class="sidebar-nav left-sidebar-menu-pro">
@@ -189,7 +189,7 @@
                                 <div class="row">
                                     <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
                                         <div class="menu-switcher-pro">
-                                            <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
+                                            <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-danger navbar-btn">
 													<i class="educate-icon educate-nav"></i>
 												</button>
                                         </div>
@@ -197,22 +197,22 @@
                                     <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
                                         <div class="header-top-menu tabl-d-n">
                                             <ul class="nav navbar-nav mai-top-nav">
-                                                <li class="nav-item"><a href="#" class="nav-link">Inicio</a>
+                                                <li class="nav-item"><a href="{{url('menu')}}" class="nav-link">Inicio</a>
                                                 </li>
                                                 {{-- <li class="nav-item"><a href="#" class="nav-link">About</a>
                                                 </li> --}}
                                                 {{-- <li class="nav-item"><a href="#" class="nav-link">Services</a>
                                                 </li> --}}
                                                 <li class="nav-item dropdown res-dis-nn">
-                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">Proyecto <span class="angle-down-topmenu"><i class="fa fa-angle-down"></i></span></a>
+                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">Soporte Tecnico <span class="angle-down-topmenu"><i class="fa fa-angle-down"></i></span></a>
                                                     <div role="menu" class="dropdown-menu animated zoomIn">
                                                         {{-- <a href="#" class="dropdown-item">Documentation</a> --}}
-                                                        <a href="#" class="dropdown-item">Encargado de diseño web</a>
-                                                        <a href="#" class="dropdown-item">Encargado de Sistema</a>
-                                                        <a href="#" class="dropdown-item">Contacto de soporte</a>
+                                                        <a href="#" class="dropdown-item">Contacto del programador</a>
+                                                        <a href="#" class="dropdown-item">Sobre el Sistema</a>
+                                                        <a href="#" class="dropdown-item">Queja o sugerencia</a>
                                                     </div>
                                                 </li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Support</a>
+                                                <li class="nav-item"><a href="#" class="nav-link">Ayuda <span class="fa fa-info-circle"></span> </a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -248,21 +248,6 @@
                                                         
                                                     </ul>
                                                 </li>
-                                                <li class="nav-item nav-setting-open"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><i class="educate-icon educate-menu"></i></a>
-
-                                                    <div role="menu" class="admintab-wrap menu-setting-wrap menu-setting-wrap-bg dropdown-menu animated zoomIn">
-                                                        <ul class="nav nav-tabs custon-set-tab">
-                                                            <li class="active"><a data-toggle="tab" href="#Notes">Notes</a>
-                                                            </li>
-                                                            <li><a data-toggle="tab" href="#Projects">Projects</a>
-                                                            </li>
-                                                            <li><a data-toggle="tab" href="#Settings">Settings</a>
-                                                            </li>
-                                                        </ul>
-
-                                                        
-                                                    </div>
-                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -275,7 +260,7 @@
             <!-- Algo que necesito-->
 
             <!-- Mobile Menu start -->
-            <div class="mobile-menu-area">
+            {{-- <div class="mobile-menu-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -335,7 +320,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <!-- Mobile Menu end -->
             <div class="breadcome-area">
                 <div class="container-fluid">
@@ -394,7 +379,11 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer-copy-right">
-                            <p>Copyright © 2020. Todos los derechos reservados. Escuela Primaria Simbolos Patrios <a href="{{route('pagina.inicio')}}" class="btn btn-link"> | Inicio</a></p>
+                            <p>
+                                <a href="{{route('pagina.inicio')}}" class="btn btn-wiht">
+                                    Inicio
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
