@@ -1784,14 +1784,14 @@ ul.tab-review-design li {
     left: 0px;
     width: 80%;
     height: 2px;
-    background: #006DF0;
+    background: darkred;
     content: "";
     transition: all .4s ease 0s;
 }
 
 ul.tab-custon-design li.active a,
 ul.tab-review-design li.active a {
-    color: #006DF0 !important;
+    color: darkred !important;
 }
 
 ul.tab-custon-design li a,

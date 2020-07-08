@@ -4,88 +4,79 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="x-editable-list">
-                    <div class="alert-title">
-                        <h2>Calificaciones</h2>
-                        <p>Aqui va a ir un formulario que sera el modulo de calificaciones</p>
+                <div class="product-status-wrap drp-lst">
+                    <h4>Módulo de calificaciones</h4>
+                    {{-- <div class="add-product">
+                        <a href="add-department.html">Add Departments</a>
+                    </div> --}}
+                    <select name="" id="" class="form-control" style="width: 20%">
+                        <option value="0">
+                            Seleccionar grado
+                        </option>
+                        <option value="1">
+                            1°
+                        </option>
+                        <option value="2">
+                            2°
+                        </option>
+                        <option value="3">
+                            3°
+                        </option>
+                        <option value="4">
+                            4°
+                        </option>
+                        <option value="5">
+                            5°
+                        </option>
+                        <option value="6">
+                            6°
+                        </option>
+                    </select>
+                    <div class="asset-inner">
+                        <table>
+                            <tbody><tr>
+                                <th>Matricula</th>
+                                <th>Grado</th>
+                                <th>Nombre</th>
+                                <th>Correo</th>
+                                <th>Telefono</th>
+                                <th>Calificación</th>
+                                <th>Información</th>
+                            </tr>
+                            @foreach ($alumno as $alumnos)
+
+                            <tr>
+                                    
+                                <td>{{$alumnos->matricula}}</td>
+                                <td>{{$alumnos->grado}}</td>
+                                <td>{{$alumnos->nombre.' '.$alumnos->apellidoP}}</td>
+                                <td>{{$alumnos->email}}</td>
+                                <td>{{$alumnos->telefono}}0</td>
+                                <td>10.0</td>
+                                <td>
+                                    <a href="{{route('calif.info', ['id'=>$alumnos->ida])}}">Más Información</a>
+                                </td>
+                                {{-- <td>
+                                    <button data-toggle="tooltip" title="" class="pd-setting-ed" data-original-title="Edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                                    <button data-toggle="tooltip" title="" class="pd-setting-ed" data-original-title="Trash"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
+                                </td> --}}
+                            </tr>
+                            @endforeach
+
+                            {{--  --}}
+                        </tbody></table>
                     </div>
-                    <table id="user" class="table table-bordered table-striped x-editor-custom">
-                        <tbody>
-                            <tr>
-                                <td>Simple text field</td>
-                                <td><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter username">superuser</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Empty text field, required</td>
-                                <td>
-                                    <a href="#" id="firstname" data-type="text" data-pk="1" data-placement="right" data-placeholder="Required" data-title="Enter your firstname"></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Select, local array, custom display</td>
-                                <td>
-                                    <a href="#" id="sex" data-type="select" data-pk="1" data-value="" data-title="Select sex"></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Select, remote array, no buttons</td>
-                                <td><a href="#" id="group" data-type="select" data-pk="1" data-value="5" data-source="/groups" data-title="Select group">Admin</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Select, error while loading</td>
-                                <td><a href="#" id="status" data-type="select" data-pk="1" data-value="0" data-source="/status" data-title="Select status">Active</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Datepicker</td>
-                                <td>
-                                    <a href="#" id="vacation" data-type="date" data-viewformat="dd.mm.yyyy" data-pk="1" data-placement="right" data-title="When you want vacation to start?">25.02.2013</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Combodate (date)</td>
-                                <td>
-                                    <a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth"></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Combodate (datetime)</td>
-                                <td>
-                                    <a href="#" id="event" data-type="combodate" data-template="D MMM YYYY  HH:mm" data-format="YYYY-MM-DD HH:mm" data-viewformat="MMM D, YYYY, HH:mm" data-pk="1" data-title="Setup event date and time"></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Bootstrap Datetimepicker</td>
-                                <td><a href="#" id="meeting_start" data-type="datetime" data-pk="1" data-url="/post" data-placement="right" title="Set date & time">15/03/2013 12:45</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Textarea, buttons below. Submit by <i>ctrl+enter</i>
-                                </td>
-                                <td><a href="#" id="comments" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-title="Enter comments">awesome user!</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Checklist</td>
-                                <td>
-                                    <a href="#" id="fruits" data-type="checklist" data-value="2,3" data-title="Select fruits"></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Select2 (tags mode)</td>
-                                <td><a href="#" id="tags" data-type="select2" data-pk="1" data-title="Enter tags">html, javascript</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Select2 (dropdown mode)</td>
-                                <td>
-                                    <a href="#" id="country" data-type="select2" data-pk="1" data-value="BS" data-title="Select country"></a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="custom-pagination">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>

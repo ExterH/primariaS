@@ -16,7 +16,8 @@ class CalifController extends Controller
     public function index()
     {
         $calif = Calificaciones::all();
-        return view('calif.index',compact('calif'));//
+        $alumno = Alumnos::all();
+        return view('calif.index',compact('calif','alumno'));//5
     }
 
     /**
@@ -46,9 +47,11 @@ class CalifController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Request $request, $ida)
     {
-        //
+        // $grado = Grados::all();
+        $alumnos = Alumnos::find($ida);
+        return view('calif.show',compact('alumnos'));
     }
 
     /**
