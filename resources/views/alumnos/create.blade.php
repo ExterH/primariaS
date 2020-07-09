@@ -7,7 +7,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="product-payment-inner-st">
                     <ul id="myTabedu1" class="tab-review-design">
-                        <li class="active"><a href="#description">Información Básica</a></li>
+                        <li class="active"><a href="#description">Información Básica del Alumno</a></li>
                         
                     </ul>
                     <div id="myTabContent" class="tab-content custom-product-edit">
@@ -42,7 +42,36 @@
                                                                 <option value="{{$grados->idg}}">{{$grados->nombre.'° grado'}}</option>
                                                                 @endforeach
                                                             </select>
+                                                        <ul id="myTabedu1" class="tab-review-design">
+                                                            <li class="active"><a href="#description">Ingresa la información del Tutor en esta área</a></li>
+                                                        </ul>  
                                                         </div>
+                                                        <div class="form-group">
+                                                            <input name="tutor" id="tutor" type="text" class="form-control" placeholder="Nombre completo">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input name="email" id="email" type="text" class="form-control" placeholder="Ingresa el Email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input name="telefono" id="telefono" type="text" class="form-control" placeholder="Ingresa el Telefono">
+                                                        </div>
+                                                        <ul id="myTabedu1" class="tab-review-design">
+                                                            <li class="active"><a href="#description">Datos Domiciliarios</a></li>
+                                                        </ul> 
+                                                        <div class="form-group">
+                                                            <input name="calle" id="calle" type="text" class="form-control" placeholder="Calle">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input name="colonia" id="colonia" type="text" class="form-control" placeholder="Colonia">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input name="municipio" id="munucipio" type="text" class="form-control" placeholder="Municipio">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input name="biografia" id="biografia" type="text" class="form-control" placeholder="Biografia">
+                                                        </div>
+                                                        
+                                                        
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-lg-12">

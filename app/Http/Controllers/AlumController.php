@@ -45,6 +45,13 @@ class AlumController extends Controller
         $alumnos->apellidoM = $request->apellidoM;
         $alumnos->grado = $request->grado;
         $alumnos->fecha = $request->fecha;
+        $alumnos->tutor = $request->tutor;
+        $alumnos->email = $request->email;
+        $alumnos->telefono = $request->telefono;
+        $alumnos->calle = $request->calle;
+        $alumnos->colonia = $request->colonia;
+        $alumnos->municipio = $request->municipio;
+        $alumnos->biografia = $request->biografia;
         $alumnos->save();
         return redirect('/alumnos')->with('alert', 'Guardado con exito');
 
