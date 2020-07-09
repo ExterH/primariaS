@@ -13,6 +13,14 @@ class Alumnos extends Model
     'nombre',
     'apellidoP',
     'apellidoM',
-    'grado'
+    'grado',
+    'fecha',
+    'tutor',
+    'email',
+    'telefono',
+    'calle',
+    'colonia',
+    'municipio',
+    'biografia'
     ];
 }
