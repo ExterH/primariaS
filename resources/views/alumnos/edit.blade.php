@@ -46,9 +46,9 @@
                                                         </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <div class="payment-adress">
-                                                            <button type="submit" class="btn btn-primary waves-effect waves-light">Actualizar</button>
+                                                    <div class="col-lg-12"><br>
+                                                        <div class="container"><!-- payment-adress -->
+                                                            <button type="submit" class="btn btn-danger">Actualizar</button><!-- btn btn-primary waves-effect waves-light -->
                                                         </div>
                                                     </div>
                                                 </div>
