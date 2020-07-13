@@ -7,7 +7,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="product-payment-inner-st">
                     <ul id="myTabedu1" class="tab-review-design">
-                        <li class="active"><a href="#description">Información Básica del Alumno</a></li>
+                        <li class="active"><a href="#description">INFORMACIÓN BASICA DEL ALUMNO</a></li>
                         
                     </ul>
                     <div id="myTabContent" class="tab-content custom-product-edit">
@@ -43,7 +43,7 @@
                                                                 @endforeach
                                                             </select>
                                                         <ul id="myTabedu1" class="tab-review-design">
-                                                            <li class="active"><a href="#description">Ingresa la información del Tutor en esta área</a></li>
+                                                            <li class="active"><a href="#description">INGRESA LA INFORMACIÓN DEL TUTOR</a></li>
                                                         </ul>  
                                                         </div>
                                                         <div class="form-group">
@@ -56,7 +56,7 @@
                                                             <input name="telefono" id="telefono" type="text" class="form-control" placeholder="Ingresa el Telefono">
                                                         </div>
                                                         <ul id="myTabedu1" class="tab-review-design">
-                                                            <li class="active"><a href="#description">Datos Domiciliarios</a></li>
+                                                            <li class="active"><a href="#description">DATOS DOMICILIARIOS</a></li>
                                                         </ul> 
                                                         <div class="form-group">
                                                             <input name="calle" id="calle" type="text" class="form-control" placeholder="Calle">
@@ -68,7 +68,7 @@
                                                             <input name="municipio" id="munucipio" type="text" class="form-control" placeholder="Municipio">
                                                         </div>
                                                         <div class="form-group">
-                                                            <input name="biografia" id="biografia" type="text" class="form-control" placeholder="Biografia">
+                                                            <textarea name="biografia" id="biografia" type="" class="form-control" placeholder="Biografia"></textarea>
                                                         </div>
                                                         
                                                         
