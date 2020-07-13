@@ -6,9 +6,10 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="product-status-wrap">
                     <h4>Alumnos</h4>
-                    <div class="add-product">
-                        <a href="alumnos/create">Agregar alumnos</a>
+                    <div style="text-align: right"><!--add-product-->
+                        <a href="alumnos/create" class="btn btn-danger" >Agregar alumnos</a>
                     </div>
+                    <br>
                     <div class="asset-inner">
                         <table>
                             <tr>

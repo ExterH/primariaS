@@ -7,8 +7,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="product-payment-inner-st">
                     <ul id="myTabedu1" class="tab-review-design">
-                        <li class="active"><a href="#description">INFORMACIÓN BASICA DEL ALUMNO</a></li>
-                        
+                        <li class="active"><a href="#description">INFORMACIÓN BASICA DEL ALUMNO</a></li> 
                     </ul>
                     <div id="myTabContent" class="tab-content custom-product-edit">
                         <div class="product-tab-list tab-pane fade active in" id="description">
@@ -43,7 +42,8 @@
                                                                 @endforeach
                                                             </select>
                                                         <ul id="myTabedu1" class="tab-review-design">
-                                                            <li class="active"><a href="#description">INGRESA LA INFORMACIÓN DEL TUTOR</a></li>
+                                                        <ul id="myTabedu1" class="tab-review-design"><br>
+                                                            <li class="active"><a href="#description">INFORMACIÓN DEL TUTOR</a></li>
                                                         </ul>  
                                                         </div>
                                                         <div class="form-group">
@@ -75,8 +75,8 @@
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-lg-12">
-                                                        <div class="payment-adress">
-                                                            <button type="submit" class="btn btn-primary waves-effect waves-light">Guardar</button>
+                                                        <div class="container"><!-- payment-adress -->
+                                                            <button type="submit" class="btn btn-danger">Guardar</button> <!-- btn btn-danger waves-effect waves-light -->
                                                         </div>
                                                     </div>
                                                 </div>
