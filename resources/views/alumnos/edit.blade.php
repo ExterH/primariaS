@@ -43,8 +43,37 @@
                                                                 <option value="{{$grados->idg}}">{{$grados->nombre.'° grado'}}</option>
                                                                 @endforeach
                                                             </select>
+                                                            <ul id="myTabedu1" class="tab-review-design">
+                                                        <ul id="myTabedu1" class="tab-review-design"><br>
+                                                            <li class="active"><a href="#description">INFORMACIÓN DEL TUTOR</a></li>
+                                                        </ul>  
                                                         </div>
-                                                </div>
+                                                        <div class="form-group">
+                                                            <input name="tutor" id="tutor" type="text" class="form-control" placeholder="Nombre completo">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input name="email" id="email" type="text" class="form-control" placeholder="Ingresa el Email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input name="telefono" id="telefono" type="text" class="form-control" placeholder="Ingresa el Telefono">
+                                                        </div>
+                                                        <ul id="myTabedu1" class="tab-review-design">
+                                                            <li class="active"><a href="#description">DATOS DOMICILIARIOS</a></li>
+                                                        </ul> 
+                                                        <div class="form-group">
+                                                            <input name="calle" id="calle" type="text" class="form-control" placeholder="Calle">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input name="colonia" id="colonia" type="text" class="form-control" placeholder="Colonia">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input name="municipio" id="munucipio" type="text" class="form-control" placeholder="Municipio">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <textarea name="biografia" id="biografia" type="" class="form-control" placeholder="Biografia"></textarea>
+                                                        </div>
+                                                        </div>
+                                                    </div>
                                                 <div class="row">
                                                     <div class="col-lg-12"><br>
                                                         <div class="container"><!-- payment-adress -->
