@@ -186,13 +186,22 @@
                                                                 </tbody>
                                                             </table>
                                                             <br>
-                                                            <textarea name="" id="" cols="30" rows="10" disabled>Observaciones</textarea>
+                                                            <textarea name="" id="" cols="30" rows="10" disabled>{{$alumnos->biografia}}
+                                                            </textarea>
                                                             <br>
-                                                            <b>Calificación total: </b>
+                                                            <b>
+                                                                Calificación total: 
+                                                            </b>
                                                             <br>    
                                                             <input type="text" placeholder="8.8" disabled>
-                                                            <br><br><a href="#">
-                                                            <input type="button" class="btn btn-danger" style="background: darkred" value="Editar Calificaciones"></a>
+                                                            <br><br>
+                                                            <a href="{{route('calif.edit',['id'=>$alumnos->ida])}}">
+                                                                <input 
+                                                                type="button" 
+                                                                class="btn btn-danger" 
+                                                                style="background: darkred" 
+                                                                value="Editar Calificaciones">
+                                                            </a>
                                                         </div>
                                                     </div>
                                                 </div>
