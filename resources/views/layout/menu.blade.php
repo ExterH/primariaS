@@ -95,7 +95,7 @@
                                 <span class="mini-click-non">Anuncios</span>
                             </a>
                         </li>
-                        @if (Auth::user()->rol == Administrador || Auth::user()->rol == Directora)
+                        @if (Auth::user()->rol == "Administrador" || Auth::user()->rol == "Directora")
                         <li>
                             <a title="Landing Page" href="{{url('banners')}}" aria-expanded="false">
                                 <span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true">
@@ -126,9 +126,9 @@
                         </li> --}}
 
                         {{-- Acceso administrador --}}
-                        @if ()
+                        {{-- @if ()
                             
-                        @endif
+                        @endif --}}
                         <li>
                             <a class="has-arrow" href="{{route('alumnos.index')}}" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Alumnos</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
