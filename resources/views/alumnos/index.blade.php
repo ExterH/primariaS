@@ -32,6 +32,7 @@
                                     </form>
                                     
                                 </td> --}}
+                                
                                 <td>{{$alumnos->grado}}</td>
 
                                 <td>

@@ -123,7 +123,8 @@
                                 <li><a title="All Professors" href="#"><span class="mini-sub-pro">Inicio</span></a></li>
                                 
                             </ul>
-                        </li> --}}
+                        </li>--}}
+                           @endif --}}
 
                         {{-- Acceso administrador --}}
                         {{-- @if ()
