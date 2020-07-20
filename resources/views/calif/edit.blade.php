@@ -9,11 +9,13 @@
                 <i>
                     EDITAR CALIFICACIONES "
                     <br>
+                    {{-- nombre del alumno --}}
                     {{$alumnos->nombre.' '.$alumnos->apellidoP.' '.$alumnos->apellidoM}}"
                     <br>
                 </i>
             </b>
             <div class="row">
+                {{-- Campos de ingreso de datos --}}
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="width: 30%">
                     <div class="form-group">
                         Matematicas: <br>
