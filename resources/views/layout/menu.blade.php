@@ -95,7 +95,7 @@
                                 <span class="mini-click-non">Anuncios</span>
                             </a>
                         </li>
-                        
+                        @if (Auth::user()->rol == Administrador || Auth::user()->rol == Directora)
                         <li>
                             <a title="Landing Page" href="{{url('banners')}}" aria-expanded="false">
                                 <span class="educate-icon educate-event icon-wrap sub-icon-mg" aria-hidden="true">
@@ -103,7 +103,8 @@
                                 <span class="mini-click-non">Banners
                                 </span>
                             </a>
-                        </li>
+                        </li>                      
+                        @endif
                         <li>
                             <a title="Landing Page" href="{{url('filles')}}" aria-expanded="false">
                                 <span class="educate-icon educate-data-table icon-wrap" aria-hidden="true">
@@ -123,6 +124,11 @@
                                 
                             </ul>
                         </li> --}}
+
+                        {{-- Acceso administrador --}}
+                        @if ()
+                            
+                        @endif
                         <li>
                             <a class="has-arrow" href="{{route('alumnos.index')}}" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Alumnos</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
@@ -131,6 +137,8 @@
                             </ul>
                         </li>
                         <li>
+
+
                             <a class="has-arrow" href="all-courses.html" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Clubs</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
                                 <li><a title="All Courses" href="{{route('clubs.todos')}}"><span class="mini-sub-pro">Todos los clubs</span></a></li>
