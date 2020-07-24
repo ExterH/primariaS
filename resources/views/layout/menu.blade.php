@@ -366,7 +366,12 @@
         <div class="analytics-sparkle-area">
             <div class="container-fluid">
                 <div class="row">
+
+                    {{-- layout --}}
                    @yield('menu')
+                    {{-- fin del layout --}}
+
+
                 </div>
             </div>
         </div>
