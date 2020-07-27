@@ -5,8 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 
-class LoginController extends Controller
-{
+class LoginController extends Controller{
+
+    public function __construct(){
+        $this->middleware('auth', ['only' => 'admin']);
+    }
     public function register()
     {
         $usuario = User::all();

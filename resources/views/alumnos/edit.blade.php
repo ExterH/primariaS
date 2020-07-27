@@ -43,12 +43,41 @@
                                                                 <option value="{{$grados->idg}}">{{$grados->nombre.'° grado'}}</option>
                                                                 @endforeach
                                                             </select>
+                                                            <ul id="myTabedu1" class="tab-review-design">
+                                                        <ul id="myTabedu1" class="tab-review-design"><br>
+                                                            <li class="active"><a href="#description">INFORMACIÓN DEL TUTOR</a></li>
+                                                        </ul>  
                                                         </div>
-                                                </div>
+                                                        <div class="form-group">
+                                                            <input name="tutor" id="tutor" type="text" class="form-control" placeholder="Nombre completo" value="{{$alumnos->tutor}}">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input name="email" id="email" type="text" class="form-control" placeholder="Ingresa el Email" value="{{$alumnos->email}}">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input name="telefono" id="telefono" type="text" class="form-control" placeholder="Ingresa el Telefono" value="{{$alumnos->telefono}}">
+                                                        </div>
+                                                        <ul id="myTabedu1" class="tab-review-design">
+                                                            <li class="active"><a href="#description">DATOS DOMICILIARIOS</a></li>
+                                                        </ul> 
+                                                        <div class="form-group">
+                                                            <input name="calle" id="calle" type="text" class="form-control" placeholder="Calle" value="{{$alumnos->calle}}">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input name="colonia" id="colonia" type="text" class="form-control" placeholder="Colonia" value="{{$alumnos->colonia}}">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input name="municipio" id="munucipio" type="text" class="form-control" placeholder="Municipio" value="{{$alumnos->municipio}}">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <textarea name="biografia" id="biografia" type="" class="form-control" placeholder="Biografia" value="{{$alumnos->biografia}}"></textarea>
+                                                        </div>
+                                                        </div>
+                                                    </div>
                                                 <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <div class="payment-adress">
-                                                            <button type="submit" class="btn btn-primary waves-effect waves-light">Actualizar</button>
+                                                    <div class="col-lg-12"><br>
+                                                        <div class="container"><!-- payment-adress -->
+                                                            <button type="submit" class="btn btn-danger">Actualizar</button><!-- btn btn-primary waves-effect waves-light -->
                                                         </div>
                                                     </div>
                                                 </div>
