@@ -43,7 +43,7 @@ class LoginController extends Controller
             }
             return redirect('/menu');
         }
-        return redirect('login')->withInput(request(['email']))
+        return redirect('init')->withInput(request(['email']))
             ->withErrors(['email' => 'Estas credenciales no concuerdan']);
             $contador++;
             if($contador == 3)
@@ -92,10 +92,11 @@ class LoginController extends Controller
             }
             else{
                 // return Redirect::back()->withErrors(['msg', 'Error al ingresar, vuelve a intentar']);
-                return ('Codigo incorrecto, volver a intentar')->back();
+                // return ('Codigo incorrecto, volver a intentar')->back();
+                \alert('error');
             }
             $usuario->save();
-            return redirect()->route('init');
+            return redirect('init');
             // return ('Guardado con exito')->with(redirect('init'));
         }
         return redirect('registrar');

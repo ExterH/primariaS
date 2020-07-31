@@ -1,8 +1,12 @@
 <?php
 return array(
     // set your paypal credential
-    'client_id' => 'Ad4Sxbmn8wz742FSTYw50gcERXpj78lFTx_m2Vzv-mIReuf1Ft6sHv3vDAy3HOA0Dgamp6CLziiDcFx_',
-    'secret' => 'EPATBZ1-DFavCWYzLbhq-YeICrgxBNljR5jRHm8AHVphn7bYoVmEVyI315ue0ZTEvcXVW3kEp3V9Z-KM',
+    //AR2lOLDSCD9p5AACgFvstwQNMA-SlNsJEFhvalkikHTkm3244N_c66Agk33Oc4MHv7EJqKc1rqE2aeGD
+
+    //sandbox -> Ad4Sxbmn8wz742FSTYw50gcERXpj78lFTx_m2Vzv-mIReuf1Ft6sHv3vDAy3HOA0Dgamp6CLziiDcFx_
+    'client_id' => 'AR2lOLDSCD9p5AACgFvstwQNMA-SlNsJEFhvalkikHTkm3244N_c66Agk33Oc4MHv7EJqKc1rqE2aeGD',
+    //sandbox-> EPATBZ1-DFavCWYzLbhq-YeICrgxBNljR5jRHm8AHVphn7bYoVmEVyI315ue0ZTEvcXVW3kEp3V9Z-KM
+    'secret' => 'EB6Cs9Tb1xH9CJuJJqhwqOs8BjhD4DktSvaPXK67vP0yNluf6IRrLX1zVNBKF8NgkosOlp88_IEbVP4j',
  
     /**
      * SDK configuration 
@@ -11,7 +15,7 @@ return array(
         /**
          * Available option 'sandbox' or 'live'
          */
-        'mode' => 'sandbox',
+        'mode' => 'live',
  
         /**
          * Specify the max request time in seconds

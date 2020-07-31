@@ -87,7 +87,7 @@ class carrito extends Controller
     public function trash()
     {
         \Session::forget('cart');
-        return redirect()->route('carrito.show');
+        return redirect()->route('paypal.inicio');
     }
 
     //total carrito

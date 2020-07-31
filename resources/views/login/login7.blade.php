@@ -5,6 +5,9 @@
         <div class="wrap-login100">
             <form class="login100-form validate-form" action="{{route('validar')}}" method="POST">
                 @csrf
+                {{-- @error('email', 'password')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror --}}
                 <span class="login100-form-title p-b-26">
                     Ingreso al sistema
                 </span>
@@ -29,6 +32,7 @@
                         </button>
                     </div>
                 </div>
+                {{-- <div class="alert alert-error">hh</div> --}}
 
             </form>
                 <div class="text-center p-t-115">

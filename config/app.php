@@ -234,6 +234,7 @@ return [
 
         //paypal
         'PayPal' => Srmklive\PayPal\Facades\PayPal::class,
+        'Input' => Illuminate\Support\Facades\Input::class,
 
     ],
 
