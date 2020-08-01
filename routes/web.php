@@ -133,3 +133,6 @@ Route::get('carrito/compras', 'carrito@compras')->name('carrito.compras')->middl
 // Route::get('payment','PpaypallController@')
 Route::get('payment','PpaypalController@postPayment')->name('payment');
 Route::get('payment/status','PpaypalController@getPaymentStatus')->name('payment.status');
+
+
+
