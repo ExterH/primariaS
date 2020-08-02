@@ -129,10 +129,11 @@
                             </ul>
                         </li>--}}
                         {{-- Acceso administrador --}}
+                        <!--href="{ {route('alumnos.index')}}"-->
                         <li>
-                            <a class="has-arrow" href="{{route('alumnos.index')}}" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Alumnos</span></a>
+                            <a class="has-arrow" href="http://localhost:3000/" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Alumnos</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="All Students" href="{{route('alumnos.index')}}"><span class="mini-sub-pro">Inicio</span></a></li>
+                                <li><a title="All Students" href="http://localhost:3000/Alumnos-index"><span class="mini-sub-pro">Inicio</span></a></li>
                                 
                             </ul>
                         </li>
